@@ -68,7 +68,7 @@
  - SD Записи на автомойку ☑
  - ERD ☑
  - UseCase Diagram ☑
- - UserStory ☑
+ - UserStories + StoryPoints + Sprints split ☑
  - Story Mapping ☑
  - Статусная модель ☑
  - OpenAPI ☑
