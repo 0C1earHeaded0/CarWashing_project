@@ -1,0 +1,32 @@
+@startuml
+state "Ожидает подтверждения" as pending
+state "Подтверждена" as confirmed
+state "Клиент прибыл" as checked_in
+state "В процессе мойки" as in_progress
+state "Контроль качества" as quality_check
+state "Автомобиль готов" as ready
+state "Услуга оказана" as completed
+state "Отменена" as cancelled
+state "Ожидает оплаты" as waiting_payment
+state "Отложена" as postponed
+state "Клиент не явился" as no_show
+
+[*] --> pending
+
+pending --> confirmed : Подтверждение записи
+confirmed --> checked_in : Клиент прибыл
+checked_in --> in_progress : Начало работы
+in_progress --> quality_check : Работа завершена
+quality_check --> ready : Качество проверено
+ready --> waiting_payment : Ожидает оплаты
+waiting_payment --> completed : Оплата получена
+ready --> completed : Клиент получил авто
+
+pending --> cancelled : Отмена записи
+confirmed --> cancelled : Отмена записи
+pending --> postponed : Перенос записи
+confirmed --> postponed : Перенос записи
+confirmed --> no_show : Клиент не явился
+postponed --> pending : Повторное планирование
+
+@enduml
