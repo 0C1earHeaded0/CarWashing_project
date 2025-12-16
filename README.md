@@ -63,14 +63,14 @@
 Минимальное количество машин: 0 или 290 (5 боксов * 58) машин/день.
 ```
 ## Что уже включено в проект:
- - Требования ☑
- - SD Авторизации\Регистрации ☑
- - SD Записи на автомойку ☑
- - ERD ☑
- - UseCase Diagram ☑
- - UserStories + StoryPoints + Sprints split ☑
- - Story Mapping ☑
- - Статусная модель ☑
- - OpenAPI ☑
- - C4 Модель ☑ 
-
+ - [Требования](#требования) ☑
+ - SD [Авторизации](/docs/img/SD_AuthRegistr.svg) \ [Регистрации](/docs/img/SD_AuthRegistr.svg) ☑
+ - SD [Записи на автомойку](/docs/img/SD_appointment.svg) ☑
+ - [ERD](/docs/ERD.svg) ☑
+ - [UseCase Diagram](/docs/img/UML_UseCases.svgl) ☑
+ - [UserStories + StoryPoints + Sprints split](/docs/UserStories.md) ☑
+ - [Story Mapping](/docs/img/UserStoryMapping.svg) ☑
+ - [Статусная модель](/docs/img/StatusModel.svg) ☑
+ - [OpenAPI](/openapi.yml) ☑
+ - [C4 Модель (Containers)](/docs/C4_Containers.png) ☑ 
+ - [C4 Модель (Context)](/docs/C4_Context.png) ☑ 
